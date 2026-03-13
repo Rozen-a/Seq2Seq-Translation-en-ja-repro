@@ -10,3 +10,7 @@
 
 数据集来源：[Tab-delimited Bilingual Sentence Pairs from the Tatoeba Project (Good for Anki and Similar Flashcard Applications)](https://www.manythings.org/anki/)
 
+
+
+本项目中使用 **GRU 模型**代替论文中使用的 LSTM ，作为 LSTM 的一个流行变体，GRU 在保持 LSTM 效果的同时简化了结构 ，它将细胞状态和隐藏状态混合为一个单一的隐藏状态，计算比标准 LSTM 更简单，在减少了参数量、加快了训练速度的情况下，效果与 LSTM 相近。
+
