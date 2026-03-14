@@ -88,27 +88,6 @@ jupyter notebook seq2seq_en_ja.ipynb
    - 模型训练
    - 模型评估
 
-### 使用预训练模型
-
-项目在 `checkpoints` 文件夹中提供了训练好的模型文件：
-- `best.ckpt`：在本地运行保存的最佳模型
-- `best_cloud.ckpt`：在云上平台运行保存的最佳模型
-
-可以直接加载模型进行推理：
-
-```python
-import torch
-from seq2seq_en_ja import Sequence2Sequence
-
-# 加载模型
-checkpoint = torch.load('checkpoints/best.ckpt')
-model.load_state_dict(checkpoint['model_state_dict'])
-model.eval()
-
-# 进行翻译
-translation = model.infer(english_sentence)
-```
-
 ## 📁 项目结构
 
 ```
